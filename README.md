@@ -1,26 +1,45 @@
 # Robotics Engineering Portfolio
 
-A hands-on portfolio documenting my transition into robotics engineering, with a focus on ROS 2, robotics simulation, middleware, and embedded-system integration.
+ROS 2, robotics simulation, middleware, and embedded-system integration을 학습하고 구현하는 과정을 기록하는 기술 포트폴리오입니다.
 
-## Learning and project roadmap
+## Start here
 
-- ROS 2 fundamentals: nodes, topics, services, actions, parameters, and launch
-- DDS and QoS: discovery, communication reliability, and data delivery policies
-- Robot description and simulation: URDF, TF2, and MuJoCo
-- System integration: ros2_control and hardware abstraction
-- Embedded integration: STM32, UART, PWM, encoders, and real-time control
+- [6주 학습 로드맵](roadmap.md)
+- [통합 로봇 시스템 아키텍처](architecture.md)
+- [로봇 개발 직무 지도](role-map.md)
+- [개발 환경 구축 기록](environment.md)
+- [Robotics Dictionary — 90 terms](glossary.md)
+- [학습 블로그](index.md)
 
-## Current focus
+## Main project
 
-Understanding how ROS 2 uses DDS for distributed communication, and how QoS policies affect communication between publishers and subscribers.
+**ROS 2 & Embedded Based Robotic Joint Control System**
 
-## Portfolio principles
+ROS 2 PC application → control/middleware → replaceable simulation or hardware backend → MuJoCo / STM32 → actuator and feedback.
 
-- Document what I actually build, test, and learn.
-- Clearly distinguish verified results from planned experiments.
-- Keep each project reproducible with setup instructions and test evidence.
+See [System Architecture](architecture.md) for the design, boundaries, and safety notes.
+
+## Repository structure
+
+```text
+_posts/                  # Learning notes
+curriculum/              # Six-week learning roadmap
+architecture/            # System architecture and role map
+environment/             # Development environment notes
+glossary/                # Robotics dictionary
+assets/diagrams/         # SVG technical diagrams
+projects/                # Implementation projects (added as built)
+.github/workflows/       # Jekyll / GitHub Pages deployment
+```
+
+## Engineering principles
+
+- Record what was actually implemented and tested.
+- Distinguish completed work, ongoing experiments, and future plans.
+- Include reproducible commands, logs, and validation evidence.
+- Treat simulation and hardware safety separately.
 - Do not publish confidential information from previous employers.
 
 ## Blog
 
-Learning notes and project write-ups will be published in the site's blog.
+The site is generated with Jekyll and deployed through GitHub Pages. A push to `main` triggers the GitHub Actions Pages workflow. The repository is the source; the public website is the rendered output.
