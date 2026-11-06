@@ -44,6 +44,10 @@ projects/                # Implementation projects (added as built)
 - Treat simulation and hardware safety separately.
 - Do not publish confidential information from previous employers.
 
+## Site navigation
+
+The public site groups content into five sections: Home, Projects, Learning, Knowledge Base, and About. The visual system is implemented with Jekyll Minima plus repository-managed Sass overrides, keeping the GitHub Pages build compatible.
+
 ## Blog
 
 The site is generated with Jekyll and deployed through GitHub Pages. A push to `main` triggers the GitHub Actions Pages workflow. The repository is the source; the public website is the rendered output.
