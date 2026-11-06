@@ -13,6 +13,7 @@ header_pages:
   - architecture/robotics-role-map.md
   - glossary/robotics-dictionary.md
   - environment/development-environment.md
+  - guides/blog-publishing-guide.md
   - about.md
 
 markdown: kramdown
