@@ -11,14 +11,19 @@ ROS 2, simulation, middleware, and embedded-system integration을 학습하고 �
 
 ## Learning Journal
 
-학습 내용을 순서대로 정리합니다. 각 글에는 핵심 개념, 실습 과정, 검증 결과와 프로젝트 적용 방향을 기록합니다.
+강의별 개념과 실습 결과를 정리합니다. 강의 본문과 학습 중 발생한 질문·답변은 별도 글로 관리합니다.
 
 | 강의 | 주제 | 진행 상태 |
 |---|---|---|
 | 01 | [ROS 1과 ROS 2의 통신 구조, DDS와 QoS](ros2/fundamentals/2026/11/06/ros2-communication-dds-qos/) | 게시 완료 |
-| 02 | [ROS 2 Topic, Service, Action](#) | 학습 중 · 실습 후 게시 예정 |
+| 02 | ROS 2 Topic, Service, Action | 실습 완료 · 게시 정리 예정 |
+| 04 | [Workspace, Package, Node와 colcon 빌드](ros2/fundamentals/2026/11/07/ros2-workspace-package-node/) | 게시 완료 |
 
-> 1강과 2강의 기초 학습 내용은 현재 01번 글에 통합되어 있습니다. Topic, Service, Action 수업은 실습과 검증을 마친 뒤 별도 글로 게시합니다.
+## Learning Q&A
+
+강의 중 사용자가 직접 질문한 내용을 주제별 제목으로 정리합니다. 강의 본문과 분리해 개념을 다시 찾아보기 쉽게 구성합니다.
+
+- [install/setup.bash, 빌드와 터미널 환경의 관계 — ROS 2 질문 노트 04](ros2/learning-notes/2026/11/07/ros2-workspace-build-qa/)
 
 ## Technical References
 
