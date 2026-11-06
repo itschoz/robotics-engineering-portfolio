@@ -1,5 +1,5 @@
 title: Robotics Engineering Portfolio
-description: Learning notes and projects in ROS 2, simulation, middleware, and embedded robotics.
+description: ROS 2, robotics simulation, middleware, and embedded-system integration portfolio.
 url: "https://itschoz.github.io"
 baseurl: "/robotics-engineering-portfolio"
 
@@ -8,6 +8,11 @@ lang: ko-KR
 timezone: Asia/Seoul
 
 header_pages:
+  - roadmap.md
+  - architecture.md
+  - role-map.md
+  - glossary.md
+  - environment.md
   - about.md
 
 markdown: kramdown
