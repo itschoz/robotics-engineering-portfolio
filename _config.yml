@@ -1,5 +1,5 @@
-title: Robotics Engineering Portfolio
-description: ROS 2, robotics simulation, middleware, and embedded-system integration portfolio.
+title: "IT SCHOZ | Robotics Engineering Portfolio"
+description: "Building robotic systems across ROS 2, simulation, and embedded hardware."
 url: "https://itschoz.github.io"
 baseurl: "/robotics-engineering-portfolio"
 
@@ -7,20 +7,10 @@ theme: minima
 lang: ko-KR
 timezone: Asia/Seoul
 
-header_pages:
-  - curriculum/6-week-roadmap.md
-  - architecture/system-architecture.md
-  - architecture/robotics-role-map.md
-  - glossary/robotics-dictionary.md
-  - reference/ros2-communication.md
-  - reference/ros2-packages-cli.md
-  - environment/development-environment.md
-  - guides/blog-publishing-guide.md
-  - about.md
-
 markdown: kramdown
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
 
 plugins:
   - jekyll-feed

@@ -1,0 +1,83 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<div class="home-wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Robotics Engineering Portfolio</div>
+      <h1>Building Robotic Systems:<br>From ROS 2 to Embedded Hardware</h1>
+      <p>ROS 2 기반 로봇 소프트웨어와 MuJoCo 시뮬레이션, STM32 펌웨어를 연결하며 시스템 통합 과정을 실험하고 검증하는 기술 포트폴리오입니다.</p>
+      <div class="hero-actions">
+        <a class="button-link" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
+        <a class="button-link secondary" href="{{ '/learning/' | relative_url }}">Learning Journey</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="{{ '/assets/diagrams/robot-development-role-map.svg' | relative_url }}" alt="Robotics development role map">
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading">
+      <div><div class="eyebrow">Main Project</div><h2>Robotic Joint Control System</h2></div>
+      <span class="status progress">In Progress</span>
+    </div>
+    <div class="project-feature">
+      <div class="project-visual"><img src="{{ '/assets/diagrams/robot-system-architecture.svg' | relative_url }}" alt="Robotic joint control system architecture"></div>
+      <div>
+        <h3>One control interface.<br>Simulation and hardware.</h3>
+        <p>ROS 2 기반 PC 애플리케이션에서 관절 명령을 생성하고, 공통 명령·상태 인터페이스를 통해 MuJoCo 시뮬레이션과 STM32 기반 하드웨어를 각각 연결하는 시스템을 구현합니다.</p>
+        <div class="tag-row"><span class="tech-tag">ROS 2</span><span class="tech-tag">DDS / QoS</span><span class="tech-tag">MuJoCo</span><span class="tech-tag">ros2_control</span><span class="tech-tag">STM32</span><span class="tech-tag">UART</span></div>
+        <a class="card-link" href="{{ '/projects/joint-control/' | relative_url }}">View project details ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading"><div><div class="eyebrow">Learning Progress</div><h2>Six-week engineering roadmap</h2></div><a href="{{ '/learning/' | relative_url }}">View all learning ↗</a></div>
+    <div class="progress-grid">
+      <article class="progress-card"><div class="eyebrow">01 / Foundations</div><span class="number">01–02</span><h3>ROS 2 Architecture, DDS & QoS</h3><span class="status verified">Verified</span><p>ROS 1/2 구조, Discovery, QoS 호환성 실습 완료</p></article>
+      <article class="progress-card"><div class="eyebrow">03 / Communication</div><span class="number">03</span><h3>Topic, Service & Action</h3><span class="status progress">In Progress</span><p>Fibonacci Action Server / Client 실습 성공</p></article>
+      <article class="progress-card"><div class="eyebrow">Next / Modeling</div><span class="number">04</span><h3>URDF, TF2 & MuJoCo</h3><span class="status planned">Planned</span><p>로봇 모델링과 시뮬레이션으로 확장</p></article>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading"><div><div class="eyebrow">Technical Focus</div><h2>Engineering domains</h2></div><a href="{{ '/knowledge-base/' | relative_url }}">Knowledge Base ↗</a></div>
+    <div class="card-grid">
+      <article class="focus-card"><div class="card-icon">⌘</div><h3>ROS 2 Middleware</h3><p>Node graph, DDS discovery, QoS, Topic / Service / Action.</p><a class="card-link" href="{{ '/reference/ros2-communication/' | relative_url }}">Explore ↗</a></article>
+      <article class="focus-card"><div class="card-icon">◇</div><h3>Robot Modeling</h3><p>URDF, Xacro, TF2, kinematics and robot description.</p><a class="card-link" href="{{ '/roadmap/' | relative_url }}">Explore ↗</a></article>
+      <article class="focus-card"><div class="card-icon">▱</div><h3>Simulation & Control</h3><p>MuJoCo, ros2_control, controller and hardware abstraction.</p><a class="card-link" href="{{ '/architecture/' | relative_url }}">Explore ↗</a></article>
+      <article class="focus-card"><div class="card-icon">▦</div><h3>STM32 Firmware</h3><p>UART, PWM, timer, encoder and embedded control.</p><a class="card-link" href="{{ '/projects/stm32/' | relative_url }}">Explore ↗</a></article>
+      <article class="focus-card"><div class="card-icon">⇄</div><h3>System Integration</h3><p>ROS 2 ↔ simulation / serial bridge / MCU feedback.</p><a class="card-link" href="{{ '/projects/ros2-integration/' | relative_url }}">Explore ↗</a></article>
+      <article class="focus-card"><div class="card-icon">⌘</div><h3>Developer Workflow</h3><p>Linux, colcon, Git, reproducible experiments and docs.</p><a class="card-link" href="{{ '/environment/' | relative_url }}">Explore ↗</a></article>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading"><div><div class="eyebrow">Latest Learning Journal</div><h2>Notes from the workbench</h2></div><a href="{{ '/learning/journal/' | relative_url }}">All journal entries ↗</a></div>
+    <div class="journal-list">
+      {% for post in site.posts limit:4 %}
+      <article class="journal-card">
+        <div class="journal-meta">{{ post.date | date: "%Y.%m.%d" }} · {{ post.categories | join: " / " }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 130 }}</p>
+        <a class="card-link" href="{{ post.url | relative_url }}">Read journal ↗</a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading"><div><div class="eyebrow">Knowledge Base</div><h2>Technical references</h2></div><a href="{{ '/knowledge-base/' | relative_url }}">Browse all ↗</a></div>
+    <div class="hub-grid">
+      <a class="hub-card" href="{{ '/glossary/' | relative_url }}"><h2>Robotics Dictionary</h2><p>로보틱스, ROS 2, 시뮬레이션, 제어, 임베디드 핵심 용어 사전.</p></a>
+      <a class="hub-card" href="{{ '/reference/ros2-communication/' | relative_url }}"><h2>ROS 2 Communication</h2><p>Topic, Service, Action, DDS, QoS의 개념과 실습 레퍼런스.</p></a>
+      <a class="hub-card" href="{{ '/reference/ros2-packages-cli/' | relative_url }}"><h2>Package & CLI Catalog</h2><p>설치한 패키지, 실행 파일, 명령어와 트러블슈팅.</p></a>
+      <a class="hub-card" href="{{ '/architecture/' | relative_url }}"><h2>System Architecture</h2><p>최종 로봇 관절 제어 시스템의 구조와 데이터 흐름.</p></a>
+    </div>
+  </section>
+</div>
