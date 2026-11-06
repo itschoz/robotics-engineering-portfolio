@@ -139,16 +139,16 @@ ros2 topic hz /chatter
 ros2 topic type /chatter
 ```
 
-## 8. 다음 실습과 검증 항목
+## 8. QoS 호환성 실습 완료
 
-다음 단계에서는 QoS 설정을 직접 변경해 Publisher와 Subscriber 간 호환성 차이를 확인한다.
+QoS 설정을 직접 확인하고 Publisher와 Subscriber 간 호환성 실습을 진행했다. 사용자가 안내된 QoS 실습을 모두 수행했음을 확인했다.
 
-- Best Effort Publisher와 Reliable Subscriber 조합
-- Best Effort Publisher와 Best Effort Subscriber 조합
+- Best Effort Publisher와 Reliable Subscriber 조합 확인
+- Best Effort Publisher와 Best Effort Subscriber 조합 확인
 - `ros2 topic info -v`를 이용한 Endpoint QoS 확인
-- QoS 호환성 경고 및 실제 수신 여부 기록
+- QoS 호환성에 따른 통신 동작 확인
 
-실습 결과를 확인한 뒤 성공 여부와 터미널 출력을 이 글에 추가할 예정이다.
+**검증 상태:** 실습 완료(사용자 확인). 상세 터미널 로그와 조합별 출력은 별도 증거 자료로 저장하지 않았으므로, 구체적인 경고 문구나 측정값은 임의로 재구성하지 않는다.
 
 ## 9. 정리
 
@@ -158,7 +158,7 @@ ros2 topic type /chatter
 4. QoS는 Reliability, Durability, History, Deadline 등 데이터 통신 정책을 정의한다.
 5. Discovery와 실제 데이터 통신은 구분해야 하며 QoS 호환성도 확인해야 한다.
 
-다음 글에서는 QoS를 직접 변경해 통신 동작을 비교하고, ROS 2의 Topic, Service, Action이 각각 어떤 상황에 적합한지 정리할 예정이다.
+QoS 호환성 실습을 마쳤으며, 다음 학습에서는 ROS 2의 Topic, Service, Action이 각각 어떤 상황에 적합한지 실제 예제로 확인한다.
 
 ---
 
