@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">ROS 2 and embedded robot joint control system architecture</title>
+<desc id="desc">A ROS 2 application connects through middleware and ros2_control to either a MuJoCo simulation backend or an STM32 hardware backend, with state feedback returning to the application.</desc>
+<defs>
+  <style>
+    .bg{fill:#f7f9fc}.panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.blue{fill:#e8f1ff;stroke:#3675c8;stroke-width:2}.green{fill:#e8f7ef;stroke:#23865a;stroke-width:2}.amber{fill:#fff3db;stroke:#ba7a15;stroke-width:2}.purple{fill:#f2eaff;stroke:#8056b3;stroke-width:2}.title{font:700 30px Arial,sans-serif;fill:#172b4d}.head{font:700 22px Arial,sans-serif;fill:#17324f}.body{font:16px Arial,sans-serif;fill:#31445b}.small{font:14px Arial,sans-serif;fill:#53657a}.arrow{stroke:#40566f;stroke-width:3;fill:none;marker-end:url(#arrow)}.feedback{stroke:#14805e;stroke-width:3;fill:none;stroke-dasharray:9 7;marker-end:url(#greenarrow)}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#40566f"/></marker>
+  <marker id="greenarrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#14805e"/></marker>
+</defs>
+<rect class="bg" width="1400" height="900" rx="26"/>
+<text x="700" y="58" text-anchor="middle" class="title">ROS 2 &amp; Embedded Robotic Joint Control System</text>
+<text x="700" y="88" text-anchor="middle" class="small">One command/state contract · Two interchangeable execution backends</text>
+
+<rect x="430" y="120" width="540" height="112" rx="18" class="blue"/>
+<text x="700" y="158" text-anchor="middle" class="head">ROS 2 Application</text>
+<text x="700" y="190" text-anchor="middle" class="body">Command UI · Joint target publisher · State monitor · Action client</text>
+<path class="arrow" d="M700 232 V278"/>
+
+<rect x="430" y="280" width="540" height="106" rx="18" class="purple"/>
+<text x="700" y="319" text-anchor="middle" class="head">ROS 2 Middleware</text>
+<text x="700" y="350" text-anchor="middle" class="body">RCL → RMW → DDS · Discovery · QoS</text>
+<path class="arrow" d="M700 386 V432"/>
+
+<rect x="430" y="434" width="540" height="112" rx="18" class="blue"/>
+<text x="700" y="474" text-anchor="middle" class="head">Control Layer</text>
+<text x="700" y="505" text-anchor="middle" class="body">ros2_control · Controller Manager · Controller</text>
+<text x="700" y="527" text-anchor="middle" class="small">Joint command / state interfaces</text>
+<path class="arrow" d="M700 546 V592"/>
+<path class="arrow" d="M700 592 H350 V635"/>
+<path class="arrow" d="M700 592 H1050 V635"/>
+
+<rect x="90" y="637" width="520" height="150" rx="18" class="green"/>
+<text x="350" y="677" text-anchor="middle" class="head">Simulation Backend</text>
+<text x="350" y="711" text-anchor="middle" class="body">MuJoCo · MJCF model · Physics step</text>
+<text x="350" y="741" text-anchor="middle" class="small">Virtual joint state and simulated feedback</text>
+
+<rect x="790" y="637" width="520" height="150" rx="18" class="amber"/>
+<text x="1050" y="677" text-anchor="middle" class="head">Embedded Hardware Backend</text>
+<text x="1050" y="711" text-anchor="middle" class="body">Serial Bridge ↔ UART ↔ STM32 Firmware</text>
+<text x="1050" y="741" text-anchor="middle" class="small">PWM / Motor Driver / Encoder / Actuator</text>
+
+<path class="feedback" d="M350 637 V575 H430"/>
+<path class="feedback" d="M1050 637 V575 H970"/>
+<text x="700" y="855" text-anchor="middle" class="small">Dashed green paths represent state feedback returning through the control and application layers.</text>
+</svg>
