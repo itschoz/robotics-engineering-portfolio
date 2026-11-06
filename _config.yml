@@ -8,11 +8,11 @@ lang: ko-KR
 timezone: Asia/Seoul
 
 header_pages:
-  - roadmap.md
-  - architecture.md
-  - role-map.md
-  - glossary.md
-  - environment.md
+  - curriculum/6-week-roadmap.md
+  - architecture/system-architecture.md
+  - architecture/robotics-role-map.md
+  - glossary/robotics-dictionary.md
+  - environment/development-environment.md
   - about.md
 
 markdown: kramdown
