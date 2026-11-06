@@ -10,6 +10,7 @@ ROS 2, robotics simulation, middleware, and embedded-system integration을 학�
 - [개발 환경 구축 기록](environment/development-environment.md)
 - [Robotics Dictionary — 90 terms](glossary/robotics-dictionary.md)
 - [초기 환경 구축 메모](environment/initial-setup-notes.md)
+- [블로그 글 작성 및 게시 가이드](guides/blog-publishing-guide.md)
 - [학습 블로그 글](https://itschoz.github.io/robotics-engineering-portfolio/ros2/fundamentals/2026/11/06/ros2-communication-dds-qos/)
 
 ## Main project
