@@ -20,6 +20,12 @@ ROS 2, simulation, middleware, and embedded-system integration을 학습하고 �
 
 > 1강과 2강의 기초 학습 내용은 현재 01번 글에 통합되어 있습니다. Topic, Service, Action 수업은 실습과 검증을 마친 뒤 별도 글로 게시합니다.
 
+## Technical References
+
+- [Robotics Dictionary — 100 terms](glossary/)
+- [ROS 2 Communication Reference](reference/ros2-communication/)
+- [ROS 2 Package & CLI Catalog](reference/ros2-packages-cli/)
+
 ## 현재 학습 주제
 
 - ROS 2 architecture and communication
