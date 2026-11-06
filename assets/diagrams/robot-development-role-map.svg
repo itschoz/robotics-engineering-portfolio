@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" role="img" aria-labelledby="title desc">
+<title id="title">Robotics development role map</title>
+<desc id="desc">Six connected robotics engineering disciplines with middleware, simulation validation, and development infrastructure as cross-cutting capabilities.</desc>
+<defs>
+<style>
+.bg{fill:#f8fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.blue{stroke:#3b82f6}.green{stroke:#23956b}.amber{stroke:#c08427}.purple{stroke:#8056b3}.h{font:700 22px Arial,sans-serif;fill:#18324f}.n{font:700 15px Arial,sans-serif;fill:#fff}.q{font:italic 15px Arial,sans-serif;fill:#3e536b}.t{font:15px Arial,sans-serif;fill:#40546b}.band{fill:#edf2f8;stroke:#cbd5e1;stroke-width:2}.bt{font:700 19px Arial,sans-serif;fill:#263c55}.st{font:14px Arial,sans-serif;fill:#506176}.line{stroke:#94a3b8;stroke-width:3;fill:none;marker-end:url(#a)}
+</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+</defs>
+<rect class="bg" width="1500" height="820" rx="24"/>
+<text x="750" y="54" text-anchor="middle" class="h" style="font-size:30px">로봇 개발 직무 지도</text>
+<text x="750" y="83" text-anchor="middle" class="st">하나의 로봇 시스템을 완성하기 위해 연결되는 여섯 가지 핵심 역할</text>
+<rect x="55" y="115" width="220" height="80" rx="14" class="band"/><text x="165" y="148" text-anchor="middle" class="bt">요청·인지</text><text x="165" y="174" text-anchor="middle" class="st">센서 / 사용자 입력</text>
+<path class="line" d="M275 155 H305"/>
+<rect x="305" y="115" width="220" height="80" rx="14" class="band"/><text x="415" y="148" text-anchor="middle" class="bt">계획</text><text x="415" y="174" text-anchor="middle" class="st">순서 / 경로 / 궤적</text>
+<path class="line" d="M525 155 H555"/>
+<rect x="555" y="115" width="220" height="80" rx="14" class="band"/><text x="665" y="148" text-anchor="middle" class="bt">제어</text><text x="665" y="174" text-anchor="middle" class="st">목표 추종 / 안정성</text>
+<path class="line" d="M775 155 H805"/>
+<rect x="805" y="115" width="220" height="80" rx="14" class="band"/><text x="915" y="148" text-anchor="middle" class="bt">구동</text><text x="915" y="174" text-anchor="middle" class="st">전기 신호 / 모터</text>
+<path class="line" d="M1025 155 H1055"/>
+<rect x="1055" y="115" width="390" height="80" rx="14" class="band"/><text x="1250" y="148" text-anchor="middle" class="bt">실제 로봇 동작</text><text x="1250" y="174" text-anchor="middle" class="st">센서 피드백으로 반복 검증</text>
+
+<g transform="translate(55 235)">
+<rect width="220" height="285" rx="16" class="card blue"/><rect width="220" height="42" rx="14" fill="#3675c8"/><text x="18" y="28" class="n">01</text><text x="18" y="80" class="h">인지·상태 추정</text><text x="18" y="116" class="q">로봇은 무엇을 보고</text><text x="18" y="139" class="q">현재 상태를 어떻게 아는가?</text><text x="18" y="188" class="t">OpenCV · PCL</text><text x="18" y="214" class="t">센서 융합 · TF2 · EKF</text><text x="18" y="260" class="st">측정·추정·좌표화</text>
+</g>
+<g transform="translate(295 235)">
+<rect width="220" height="285" rx="16" class="card blue"/><rect width="220" height="42" rx="14" fill="#3675c8"/><text x="18" y="28" class="n">02</text><text x="18" y="80" class="h">애플리케이션</text><text x="18" y="116" class="q">어떤 순서로 작업하고</text><text x="18" y="139" class="q">실패하면 어떻게 처리할까?</text><text x="18" y="188" class="t">C++ · Python · ROS 2</text><text x="18" y="214" class="t">Topic · Service · Action</text><text x="18" y="260" class="st">작업 흐름·사용자 기능</text>
+</g>
+<g transform="translate(535 235)">
+<rect width="220" height="285" rx="16" class="card purple"/><rect width="220" height="42" rx="14" fill="#8056b3"/><text x="18" y="28" class="n">03</text><text x="18" y="80" class="h">동작·경로 계획</text><text x="18" y="116" class="q">충돌을 피하면서</text><text x="18" y="139" class="q">어떤 경로를 선택할까?</text><text x="18" y="188" class="t">MoveIt 2 · OMPL</text><text x="18" y="214" class="t">Nav2 · Trajectory</text><text x="18" y="260" class="st">경로·시간 궤적 생성</text>
+</g>
+<g transform="translate(775 235)">
+<rect width="220" height="285" rx="16" class="card purple"/><rect width="220" height="42" rx="14" fill="#8056b3"/><text x="18" y="28" class="n">04</text><text x="18" y="80" class="h">로봇 운동 제어</text><text x="18" y="116" class="q">목표 동작을 어떻게</text><text x="18" y="139" class="q">안정적으로 실행할까?</text><text x="18" y="188" class="t">PID · Control Theory</text><text x="18" y="214" class="t">C++ · ros2_control</text><text x="18" y="260" class="st">목표 추종·오차 제어</text>
+</g>
+<g transform="translate(1015 235)">
+<rect width="220" height="285" rx="16" class="card amber"/><rect width="220" height="42" rx="14" fill="#b7791f"/><text x="18" y="28" class="n">05</text><text x="18" y="80" class="h">임베디드·구동</text><text x="18" y="116" class="q">명령을 어떻게</text><text x="18" y="139" class="q">실제 전기 신호로 바꿀까?</text><text x="18" y="188" class="t">STM32 · C/C++ · UART</text><text x="18" y="214" class="t">PWM · Encoder · RTOS</text><text x="18" y="260" class="st">펌웨어·신호·실시간성</text>
+</g>
+<g transform="translate(1255 235)">
+<rect width="190" height="285" rx="16" class="card amber"/><rect width="190" height="42" rx="14" fill="#b7791f"/><text x="18" y="28" class="n">06</text><text x="18" y="80" class="h">기구·구동계</text><text x="18" y="116" class="q">하중과 운동을</text><text x="18" y="139" class="q">어떻게 견디게 할까?</text><text x="18" y="188" class="t">CAD · SolidWorks</text><text x="18" y="214" class="t">해석 · 재료 · 링크 설계</text><text x="18" y="260" class="st">구조·물성·조립</text>
+</g>
+<rect x="55" y="555" width="430" height="175" rx="16" class="band"/>
+<text x="80" y="592" class="bt">미들웨어·플랫폼</text><text x="80" y="628" class="t">ROS 2 · DDS · QoS · Linux · API</text><text x="80" y="658" class="st">모듈 간 메시지·서비스·시스템 통신</text>
+<rect x="535" y="555" width="430" height="175" rx="16" class="band"/>
+<text x="560" y="592" class="bt">시뮬레이션·검증</text><text x="560" y="628" class="t">MuJoCo · Gazebo · RViz2 · rosbag2</text><text x="560" y="658" class="st">가상 모델·실제 결과 비교·테스트 자동화</text>
+<rect x="1015" y="555" width="430" height="175" rx="16" class="band"/>
+<text x="1040" y="592" class="bt">개발 인프라·CI/CD</text><text x="1040" y="628" class="t">GitHub · CMake · colcon · Docker · CI</text><text x="1040" y="658" class="st">빌드·테스트·협업·재현 가능한 배포</text>
+<text x="750" y="780" text-anchor="middle" class="st">이번 프로젝트의 집중: ROS 2 Middleware / Simulation &amp; Validation / Embedded Integration</text>
+</svg>
