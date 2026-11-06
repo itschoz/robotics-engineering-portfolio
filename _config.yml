@@ -1,0 +1,24 @@
+title: Robotics Engineering Portfolio
+description: Learning notes and projects in ROS 2, simulation, middleware, and embedded robotics.
+url: "https://itschoz.github.io"
+baseurl: "/robotics-engineering-portfolio"
+
+theme: minima
+lang: ko-KR
+timezone: Asia/Seoul
+
+header_pages:
+  - about.md
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:categories/:year/:month/:day/:title/
+
+minima:
+  skin: classic
