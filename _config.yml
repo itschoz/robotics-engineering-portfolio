@@ -12,6 +12,8 @@ header_pages:
   - architecture/system-architecture.md
   - architecture/robotics-role-map.md
   - glossary/robotics-dictionary.md
+  - reference/ros2-communication.md
+  - reference/ros2-packages-cli.md
   - environment/development-environment.md
   - guides/blog-publishing-guide.md
   - about.md
