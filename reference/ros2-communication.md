@@ -161,7 +161,8 @@ Endpoint가 발견되어도 QoS 호환성이나 네트워크 조건에 따라 �
 | Talker 실행 | `demo_nodes_cpp talker` 실행 및 `/chatter` 확인 | 이전 실습에서 확인 |
 | C++ 데모 패키지 | `demo_nodes_cpp` 패키지 경로 및 실행 파일 목록 확인 | 확인 |
 | Fibonacci Action | `action_tutorials_cpp` 예제 실행 성공을 사용자 확인 | 완료 |
-| Listener 수신 | 출력 로그를 별도로 보관 | 증거 추가 예정 |
-| AddTwoInts Service | 요청·응답 결과를 별도로 보관 | 증거 추가 예정 |
+| QoS 호환성 실습 | 안내된 Publisher / Subscriber QoS 조합과 Endpoint QoS 확인을 수행했다고 사용자 확인 | 완료(사용자 확인) |
+| Listener 수신 | 출력 로그를 별도로 보관 | 로그 미첨부 |
+| AddTwoInts Service | 요청·응답 결과를 별도로 보관 | 별도 확인 필요 |
 
 실습 완료 표시는 실제 실행 결과나 사용자의 확인이 있을 때만 변경한다.
