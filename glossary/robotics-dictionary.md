@@ -149,3 +149,30 @@ permalink: /glossary/
 1. **1단계:** ROS 2, Node, Topic, Service, Action, DDS, QoS, URDF, Joint, MuJoCo, STM32, UART, PWM, RTOS
 2. **2단계:** Xacro, TF2, RViz2, ros2_control, Controller Manager, Hardware Interface, GPIO, Timer, Interrupt, ADC, Encoder, FreeRTOS
 3. **3단계:** micro-ROS, Protocol, Packet, Checksum, Timeout, Latency, rosbag2, Validation, Integration, Debugging
+
+
+## H. ROS 2 통신 확장 용어
+
+| No. | 용어 | 의미와 프로젝트에서의 역할 |
+|---:|---|---|
+| 91 | DDS Participant | DDS 통신 도메인에 참여하는 소프트웨어 주체 |
+| 92 | Endpoint | DDS Publisher 또는 Subscriber처럼 데이터 송수신을 수행하는 통신 종단점 |
+| 93 | Goal | Action Client가 Action Server에 요청하는 작업 목표 |
+| 94 | Feedback | Action 실행 중 Server가 Client에 전달하는 진행 정보 |
+| 95 | Result | Action 종료 후 반환되는 최종 결과 데이터 |
+| 96 | Request | Service Client가 Server에 전달하는 요청 데이터 |
+| 97 | Response | Service Server가 Client에 반환하는 응답 데이터 |
+| 98 | Action Server | Goal을 수신하고 작업·Feedback·Result·취소 처리를 수행하는 노드 측 구성 요소 |
+| 99 | Action Client | Goal을 보내고 Feedback·Result를 수신하며 취소를 요청하는 구성 요소 |
+| 100 | Interface Definition | Message·Service·Action의 데이터 구조와 필드를 정의하는 명세 |
+
+## I. ROS 2 통신 개념 빠른 비교
+
+- **Publisher / Subscriber:** Topic 데이터를 발행하는 쪽과 구독하는 쪽
+- **Client / Server:** Service 요청을 보내는 쪽과 응답하는 쪽
+- **Action Client / Action Server:** Goal을 요청하는 쪽과 장시간 작업을 수행하는 쪽
+- **Goal / Feedback / Result:** Action의 목표·진행 정보·최종 결과
+- **Request / Response:** Service의 요청 데이터·응답 데이터
+- **Participant / Endpoint:** DDS 도메인 참여자와 실제 데이터 송수신 종단점
+
+관련 상세 내용은 [ROS 2 Communication Reference]({{ '/reference/ros2-communication/' | relative_url }})와 [Package & CLI Catalog]({{ '/reference/ros2-packages-cli/' | relative_url }})를 참고한다.
