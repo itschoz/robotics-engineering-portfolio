@@ -16,13 +16,15 @@ ROS 2, simulation, middleware, and embedded-system integration을 학습하고 �
 | 강의 | 주제 | 진행 상태 |
 |---|---|---|
 | 01 | [ROS 1과 ROS 2의 통신 구조, DDS와 QoS](ros2/fundamentals/2026/11/06/ros2-communication-dds-qos/) | 게시 완료 |
-| 02 | ROS 2 Topic, Service, Action | 실습 완료 · 게시 정리 예정 |
+| 02 | [ROS 2 Topic, Service, Action](ros2/fundamentals/2026/11/07/ros2-topic-service-action/) | 게시 완료 · 실습 완료 |
 | 04 | [Workspace, Package, Node와 colcon 빌드](ros2/fundamentals/2026/11/07/ros2-workspace-package-node/) | 게시 완료 |
+| 05 | ROS 2 첫 Node 구현 — controller_node | 진행 중 · Node 실행 확인, Timer/Publisher 실습 예정 |
 
 ## Learning Q&A
 
 강의 중 사용자가 직접 질문한 내용을 주제별 제목으로 정리합니다. 강의 본문과 분리해 개념을 다시 찾아보기 쉽게 구성합니다.
 
+- [Fibonacci Action 실행 파일은 어느 패키지에 있을까? — ROS 2 질문 노트 02](ros2/learning-notes/2026/11/07/ros2-topic-service-action-qa/)
 - [install/setup.bash, 빌드와 터미널 환경의 관계 — ROS 2 질문 노트 04](ros2/learning-notes/2026/11/07/ros2-workspace-build-qa/)
 
 ## Technical References
