@@ -20,6 +20,7 @@ ROS 2, simulation, middleware, and embedded-system integration을 학습하고 �
 | 04 | [Workspace, Package, Node와 colcon 빌드](ros2/fundamentals/2026/11/07/ros2-workspace-package-node/) | 게시 완료 |
 | 05 | [ROS 2 첫 Node와 Timer/Publisher 구현](ros2/fundamentals/2026/11/07/ros2-first-node-timer-publisher/) | 게시 완료 · 실습 및 2Hz 발행 검증 완료 |
 | 06 | [Publisher/Subscriber 통신과 QoS 호환성 검증](ros2/fundamentals/2026/11/09/ros2-publisher-subscriber-qos/) | 게시 완료 · 두 Node 통신 및 Reliability 비호환 검증 완료 |
+| 07 | [6-DOF Virtual Encoder와 JointState Publisher](ros2/fundamentals/2026/11/10/ros2-virtual-encoder-joint-state/) | 게시 완료 · 100Hz 발행 및 메시지 구조 검증 완료 |
 
 ## Learning Q&A
 
@@ -29,6 +30,7 @@ ROS 2, simulation, middleware, and embedded-system integration을 학습하고 �
 - [install/setup.bash, 빌드와 터미널 환경의 관계 — ROS 2 질문 노트 04](ros2/learning-notes/2026/11/07/ros2-workspace-build-qa/)
 - [Node 실행 오류와 Float64 소수점 출력 — ROS 2 질문 노트 05](ros2/learning-notes/2026/11/07/ros2-first-node-timer-publisher-qa/)
 - [QoSProfile 설정 위치와 Reliability 호환성 — ROS 2 질문 노트 06](ros2/learning-notes/2026/11/09/ros2-publisher-subscriber-qos-qa/)
+- [self, super(), Timer 주기와 JointState — ROS 2 질문 노트 07](ros2/learning-notes/2026/11/10/ros2-virtual-encoder-joint-state-qa/)
 
 ## Technical References
 
